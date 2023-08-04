@@ -1,0 +1,31 @@
+/* In your external CSS file or inline styles */
+
+.wave-gradient {
+    position: relative;
+    background: linear-gradient(90deg, #007bff, #00bcd4);
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  .wave-gradient:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8%;
+    width: 100%;
+    height: 20%;
+    background: #00bcd4;
+    clip-path: ellipse(100% 25% at 50% 0);
+  }
+  
+  .wave-gradient:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8%;
+    width: 100%;
+    height: 20%;
+    background: #007bff;
+    clip-path: ellipse(100% 25% at 50% 100%);
+  }
+  

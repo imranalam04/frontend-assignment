@@ -1,38 +1,54 @@
-.App {
+.sidebar {
+  background-color: #512DA8; /* Violet/Bluish Color */
+  color: #fff; /* White Text */
+  height: 100vh;
+  padding-top: 1rem;
+}
+
+.sidebar h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #9575CD; /* Border for the heading */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link {
+  color: #fff; /* White Text for links */
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .imran {
+  border-radius: 50%;
+} */
+
+.vertical-divider {
+  height: 100%;
+  width: 1px;
+  background-color: #000; /* Color of the divider, change as needed */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card_main{
+  overflow-y: hidden;
+  height: 500px;
+}
+
+.fixed-card-overlay {
+  position: fixed;
+  top: 0%;
+  left: 55%;
+  z-index: 9999;
+  width: 50%;
+  height: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fixed-popup {
+  z-index: 10000;
+  width: 50%;
+  max-width: 400px;
 }

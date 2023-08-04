@@ -1,0 +1,42 @@
+/* ChatBox.css */
+
+.chatbox-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .chatbox {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .chatbox.open {
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  .chatbox-header {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chatbox-body {
+    overflow: hidden;
+  }
+  
+  .chatbox-content {
+    height: 300px; /* Adjust the height as needed */
+    overflow-y: scroll;
+  }
+  
+  .user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
